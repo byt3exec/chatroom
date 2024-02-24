@@ -2,14 +2,11 @@ import threading
 import socket
 import sys
 
-# Basic server configuration
 HOST = '1.1.1.1'
 PORT = 55555
 
-# Creating a TCP socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Binding the socket to the address and starting to listen
 try:
     server.bind((HOST, PORT))
     server.listen()
